@@ -1,1 +1,36 @@
-<app-ribbon title="Contact" folder="Pages"></app-ribbon>
+<app-ribbon title="Edit" folder="Pages"></app-ribbon>
+
+<div class="container">
+    <form [formGroup]="editForm" (ngSubmit)="postForm(editForm.value)">
+        <div class="form-group">
+            <label for="ddfs">Album</label>
+            <input type="text" class="form-control" placeholder="Album Name" formControlName="namealbum">
+        </div>
+
+        <div class="form-group">
+            <label for="ddfs">Artist</label>
+            <input type="text" class="form-control" placeholder="Artist Name" formControlName="artist">
+        </div>
+
+        <div class="form-group">
+            <label for="ddfs">Publication</label>
+            <input type="text" class="form-control" placeholder="Publication" formControlName="publication">
+        </div>
+
+        <div class="form-group">
+            <label for="ddfs">Gender</label>
+            <input type="text" class="form-control" placeholder="Gender" formControlName="gender">
+        </div>
+
+        <div class="form-group">
+            <label for="ddfs">Avatar</label>
+            <input type="image" class="form-control" placeholder="Avatar" formControlName="avatar">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+
+
+</div>
+
+<app-footer></app-footer>

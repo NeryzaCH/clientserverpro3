@@ -1,0 +1,7 @@
+{
+    "/discs/*":{
+        "target":"https://app-neryzach.herokuapp.com/",
+        "secure":false,
+        "changeOrigin":true
+}
+}

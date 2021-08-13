@@ -42,4 +42,12 @@ export class HomeComponent implements OnInit {
       this.discs = data;
     })
   }
+
+  editDisc(id){
+    this.router.navigate(['contact', id]);
+  }
+
+  newDisc(){
+    this.router.navigate(['login']);
+  }
 }
